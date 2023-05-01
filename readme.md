@@ -7,7 +7,7 @@ command=ip address add 172.16.250.2/24 brd + dev eth0;
 This is so we have a static IP assigned to our WSL instance.
 
 Then copy and paste the setwSLIPAddress.ps1 script to a folder (for example: C:/Scripts).
-Put the setip.sh script in /usr/local/bin and make it executable by using chmod u+x. 
+Put the setip.sh script in /usr/local/bin and make it executable (chmod -R u=rwX,go=rX). 
 Then edit the script so it points to the correct location. 
 
 Once that is done, restart the WSL instance, and from the WSL instance type setip.sh so the 
