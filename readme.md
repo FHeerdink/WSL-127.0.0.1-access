@@ -18,3 +18,6 @@ Now you can use and alter the portforward.ps1 script to start forwarding all the
 Happy coding! 
 
 P.S> I'm using a custom .dev domain pointing towards 127.0.0.1 that wouldn't work otherwise.
+Also make sure you have scripting enabled in Powershell, otherwise the IP address doesn't get assigned running setip.sh.
+
+(You can allow scripting by opening powershell as Administrator, then use the command: set-executionpolicy remotesigned)
